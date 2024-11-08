@@ -1,0 +1,71 @@
+body {
+    background-color: #f8f9fa;
+    padding-bottom: 50px; /* Ensure content doesn't overlap footer */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-manager-title {
+    color: #007bff; /* Blue color */
+    font-weight: 400; /* Thinner font weight */
+    font-size: 1.5rem; /* Adjusted font size */
+}
+
+.form-control {
+    width: 100%; /* Change to full width */
+    max-width: 300px; /* Maximum width for input boxes */
+    margin: 5px 0; /* Vertical margin for better spacing */
+}
+
+#loginFormElement,
+#registerFormElement {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+}
+
+.btn-complete {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .form-control {
+        width: 100%; /* Make inputs full width on small screens */
+    }
+}
+
+.social-icons {
+    margin-left: auto; /* Move social icons to the right */
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Adjusted icon size */
+    margin-left: 15px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray; /* Grayed out color for completed tasks */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#viewCompletedTasksButton {
+    margin-right: 15px; /* Add space between the button and the log out button */
+}

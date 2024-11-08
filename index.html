@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <style>
+        .task-manager-title {
+            font-weight: 600; /* الخط أرفع */
+            font-size: 2.5rem; /* حجم الخط أكبر */
+        }
+    </style>
+    <title>Task Manager</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <a class="navbar-brand task-manager-title" href="#" style="color: #007bff;">Task Manager</a>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto mt-2">
+                <li class="nav-item">
+                    <button class="btn btn-secondary" id="viewCompletedTasksButton" data-toggle="modal" data-target="#completedTasksModal" style="display: none;">View Completed Tasks</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary" id="logoutButton" style="display: none;">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container p-5">
+        <div id="loginForm" class="text-center">
+            <h2 class="my-3">Log In</h2>
+            <form id="loginFormElement" class="form-inline justify-content-center">
+                <input id="loginName" class="form-control mr-2" placeholder="Name" type="text" required>
+                <input id="loginEmail" class="form-control mr-2" placeholder="Email" type="text" required>
+                <input id="loginPassword" class="form-control mr-2" placeholder="Password" type="password" required>
+                <button class="btn btn-primary" type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <button id="showRegisterButton" class="btn btn-link">Register</button></p>
+        </div>
+
+        <div id="registerForm" class="text-center" style="display: none;">
+            <h2 class="my-3">Register</h2>
+            <form id="registerFormElement" class="form-inline justify-content-center">
+                <input id="registerName" class="form-control mr-2" placeholder="Name" type="text" required>
+                <input id="registerEmail" class="form-control mr-2" placeholder="Email" type="text" required>
+                <input id="registerPassword" class="form-control mr-2" placeholder="Password" type="password" required>
+                <button class="btn btn-primary" type="submit">Register</button>
+                <button id="cancelRegisterButton" class="btn btn-link">Cancel</button>
+            </form>
+        </div>
+
+        <div id="mainContent" class="text-center" style="display: none;">
+            <h2 class="my-3" id="currentDateTime"></h2> <!-- نقل التاريخ والوقت هنا -->
+            <h2 class="my-3">Add Task</h2>
+            <form id="addTaskForm" class="form-inline justify-content-center">
+                <input id="taskInput" class="form-control mr-2" placeholder="Enter task" type="text" required>
+                <button id="addTaskButton" class="btn btn-primary" type="submit">Add Task</button>
+            </form>
+            <div class="progress my-3">
+                <div id="progressBar" class="progress-bar bg-primary" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div id="completedTasksPercentage" class="text-center"></div>
+            <ul id="taskList" class="list-group mt-3"></ul>
+            <button class="btn btn-secondary mt-3" id="viewCompletedTasksButton" data-toggle="modal" data-target="#completedTasksModal" style="display: none;">View Completed Tasks</button>
+            <button class="btn btn-primary mt-3" id="logoutButton" style="display: none;">Log Out</button>
+        </div>
+    </main>
+
+    <!-- Completed Tasks Modal -->
+    <div class="modal fade" id="completedTasksModal" tabindex="-1" role="dialog" aria-labelledby="completedTasksModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="completedTasksModalLabel">Completed Tasks</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="completedTasksList" class="list-group"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="deleteAllCompletedTasksButton">Delete All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="small text-muted">
+        <div class="footer-content">
+            <span>Created by Mohamed Eid 2024</span>
+            <div class="social-icons">
+                <a href="https://mohamedammareid.github.io/portfolio-website/" target="_blank" title="Portfolio"><i class="fas fa-user"></i></a>
+                <a href="https://www.linkedin.com/in/mohamedammareid/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/mohamedammareid" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/mohamedammareid" target="_blank" title="X"><i class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/mohamedammareid/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@mohamedammareid" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
