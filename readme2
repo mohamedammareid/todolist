@@ -1,0 +1,60 @@
+
+Task Manager Web Application
+
+Overview:
+
+The Task Manager Web Application is a powerful yet simple tool designed to help users stay organized by managing their daily tasks. Whether you're managing personal to-dos or working on a team project, this web app provides an intuitive interface that makes tracking your tasks easier and more efficient. The application is user-friendly, with a clean design and a seamless experience. Users can easily register, log in, create tasks, mark them as completed, view their completed tasks, and delete them when needed. The app also offers a visual progress tracker to help users stay motivated and on top of their daily tasks. In addition, the design is responsive, meaning it works well on devices of all screen sizes, from desktops to mobile phones.
+
+Key Features:
+
+User Authentication: The Task Manager web application allows users to create a personal account using their name, email, and password. The authentication system ensures that only registered users can access and manage their tasks. After signing up, users can log in securely with their credentials and access the full range of features available in the application. If a user forgets their password, a password recovery process is in place to help regain access to their account.
+
+Task Management:
+
+Add Tasks: After logging into the app, users can start adding tasks to their to-do list. Each task requires a simple input, and once entered, it will be added to the user’s task list. Tasks can represent any kind of activity, such as work assignments, personal goals, or reminders. The application makes task organization seamless by allowing users to input clear, concise details for each task.
+
+Mark Tasks as Completed: One of the standout features of the app is the ability to mark tasks as completed. When users finish a task, they can simply click the "Complete" button next to the task. This action not only marks the task visually as completed but also updates the user's progress tracker, keeping them motivated and aware of their accomplishments.
+
+View and Delete Completed Tasks:
+
+View Completed Tasks: Completed tasks are not lost once marked off the list; users can always return to view them. The application provides a special section that displays all the tasks users have marked as completed. This view is accessible from the main dashboard or via a dedicated modal window that pops up with the click of a button. Users can review all their past completed tasks and check their overall progress.
+
+Delete Completed Tasks: As users complete tasks, they might want to clean up their list by deleting tasks they've already finished. The app allows users to delete completed tasks individually or in bulk with a simple button click. This makes it easier to keep the task list neat and focused on current activities.
+
+Progress Tracker: A visual progress tracker is integrated into the application to help users monitor their productivity. The progress bar visually represents the percentage of completed tasks out of the total number of tasks. As users complete tasks, the progress bar updates in real time, giving them instant feedback on their progress. This feature helps users stay motivated and gives them a tangible sense of accomplishment as they work through their to-do list.
+
+Responsive Design: The Task Manager Web Application is designed with responsiveness in mind, ensuring that it works well on various devices, whether on a large desktop screen or a smaller mobile screen. The layout adapts to the screen size, making the user experience consistent across desktops, tablets, and smartphones. The responsive design ensures that users can easily add, complete, and manage tasks no matter where they are or what device they are using.
+
+How to Use:
+
+Registration: To get started, visit the homepage of the Task Manager web application. Click on the "Register" button to create a new account. You will be asked to provide your name, email address, and a secure password. If the email you enter is already registered, you will be prompted to log in instead. After registering, you’ll receive a confirmation email to verify your account.
+
+Login: Once registered, users can log in using their email and password. After successful authentication, users will be redirected to the main dashboard, where they can begin managing their tasks. The login feature ensures that each user’s tasks are stored securely and privately.
+
+Managing Tasks:
+
+To add a new task, type a description of the task into the input field and click the "Add Task" button. The task will immediately appear in your list of active tasks.
+
+When a task is completed, click the "Complete" button next to the task description. This will mark the task as completed and update the progress tracker.
+
+You can view completed tasks at any time by clicking the "View Completed Tasks" button, which opens a modal window showing a list of all completed tasks.
+
+If you want to delete all completed tasks, simply click the "Delete All" button in the completed tasks modal. This will permanently remove all completed tasks from the list.
+
+Logout: When you are finished using the app, click the "Log Out" button in the top-right corner to log out of your account. Logging out ensures that your task data is kept safe and secure.
+
+Technologies Used:
+
+The Task Manager Web Application is built with the following technologies:
+
+HTML: The basic structure and content of the web application are created using HTML. This forms the backbone of the app, organizing the user interface and providing the necessary elements.
+
+CSS: The styling of the web application is done using CSS, with Bootstrap being utilized for layout and responsive design. Bootstrap ensures that the app looks good on all devices and offers easy-to-use components for building a modern UI.
+
+JavaScript: JavaScript adds interactivity to the app, allowing users to register, log in, and manage their tasks. Data persistence is handled using local storage, so users’ task information is saved even when they close the app or refresh the page.
+
+Credits:
+
+Created by: Mohamed Eid
+Year: 2024
+Icons and Libraries: The app uses FontAwesome for icons and Bootstrap for layout and design, both of which help in building a clean and user-friendly interface.
